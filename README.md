@@ -1,2 +1,3 @@
-# unit-testing-angular
-A set of examples of how to unit test an Angular app
+# Unit Testing Angular
+
+A set of examples of how you can easily unit test an Angular app.
