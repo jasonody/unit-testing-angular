@@ -1,6 +1,6 @@
 describe('ControllerAsController', function () {
 	
-	beforeEach(module('testingAngular.controllers'));
+	beforeEach(module('testingAngular'));
 	
 	var $controller;
 	

@@ -1,5 +1,5 @@
 angular
-	.module('testingAngular.controllers')
+	.module('testingAngular')
 	.controller('ScopeController', ScopeController);
 
 function ScopeController ($scope) {

@@ -1,33 +1,32 @@
-describe('SpiesController using Bard', function () {
-
+describe('SpiesController', function () {
+	
+	beforeEach(module('testingAngular'));
+	
+	var $controller;
+	var user;
 	var controller;
-
-	beforeEach(function () {
-
-		bard.appModule('testingAngular.controllers')
-		bard.inject('$controller');
-
-		controller = $controller("SpiesController");
-	});
-
+	
+	beforeEach(inject(function (_$controller_, _user_) {
+		
+		$controller = _$controller_;
+		user = _user_;
+		
+		controller = _$controller_('SpiesController');
+	}));
+	
 	describe('isStaff', function () {
-
-		beforeEach(function () {
-
-			bard.inject('user');
-		});
-
+		
 		it('should return true if staff', function () {
-
+			
 			spyOn(user, 'getUserType').and.returnValue('Staff');
-
+			
 			var result = controller.isStaff();
-
+			
 			expect(result).toBeTruthy();
 		});
-
+		
 		it('should return false if not staff', function () {
-
+			
 			spyOn(user, 'getUserType').and.returnValue('Not staff');
 
 			var result = controller.isStaff();
@@ -35,4 +34,4 @@ describe('SpiesController using Bard', function () {
 			expect(result).toBeFalsy();
 		});
 	});
-});
+})

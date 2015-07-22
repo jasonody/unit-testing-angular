@@ -1,6 +1,6 @@
 describe('ScopeController', function () {
 	
-	beforeEach(module('testingAngular.controllers'));
+	beforeEach(module('testingAngular'));
 	
 	var $controller;
 	var $rootScope;

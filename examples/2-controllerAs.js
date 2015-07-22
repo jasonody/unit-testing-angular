@@ -1,5 +1,5 @@
 angular
-	.module('testingAngular.controllers')
+	.module('testingAngular')
 	.controller('ControllerAsController', ControllerAsController);
 
 function ControllerAsController () {
