@@ -2,7 +2,7 @@ angular
 	.module('testingAngular')
 	.controller('PromisesController', PromisesController);
 							
-function PromisesController (mockingHttp) {
+function PromisesController (weather) {
 	
 	var vm = this;
 	
@@ -10,7 +10,7 @@ function PromisesController (mockingHttp) {
 		
 		vm.weather = '';
 		
-		mockingHttp.getWeatherData(vm.zip)
+		weather.getData(vm.zip)
 			.then(function (data) {
 
 				vm.weather = data.weather[0].description;

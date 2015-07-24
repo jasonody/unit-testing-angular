@@ -19,7 +19,7 @@
     "karma-jasmine": "^0.3.6"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start"
   },
   "author": "Jason Ody",
   "license": "MIT"

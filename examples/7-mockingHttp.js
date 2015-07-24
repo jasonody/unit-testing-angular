@@ -1,16 +1,17 @@
 angular
 	.module('testingAngular')
-	.factory('mockingHttp', mockingHttp);
+	.factory('weather', weather);
 
-function mockingHttp ($http) {
+function weather ($http) {
 	
 	return {
-		getWeatherData: getWeatherData
+		getData: getData
 	};
 	
-	function getWeatherData (zip) {
+	function getData (zip) {
 		
 		var url = 'http://api.openweathermap.org/data/2.5/weather?zip=' + zip + ',us';
+		
 		return $http.get(url);
 	}
 }

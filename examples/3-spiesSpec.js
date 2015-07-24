@@ -3,18 +3,23 @@ describe('SpiesController', function () {
 	beforeEach(module('testingAngular'));
 	
 	var $controller;
-	var user;
 	var controller;
 	
-	beforeEach(inject(function (_$controller_, _user_) {
+	beforeEach(inject(function (_$controller_) {
 		
 		$controller = _$controller_;
-		user = _user_;
 		
 		controller = _$controller_('SpiesController');
 	}));
 	
 	describe('isStaff', function () {
+		
+		var user;
+		
+		beforeEach(inject(function (_user_) {
+			
+			user = _user_;
+		}));
 		
 		it('should return true if staff', function () {
 			

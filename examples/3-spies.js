@@ -5,7 +5,7 @@ angular
 function SpiesController (user) {
 	
 	var vm = this;
-	vm.userId = 'chopped_chilies'
+	vm.userId = 'chopped_chilies'; //Because they're awesome!
 	
 	vm.isStaff = function () {
 		

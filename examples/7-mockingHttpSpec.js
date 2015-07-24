@@ -3,8 +3,7 @@ describe('mockingHttp', function () {
 	beforeEach(function () {
 		
 		bard.appModule('testingAngular');
-		bard.inject('mockingHttp');
-		bard.inject('$httpBackend');
+		bard.inject('weather', '$httpBackend');
 	});
 	
 	afterEach(function () {
@@ -16,12 +15,12 @@ describe('mockingHttp', function () {
 		
 		it('should form the correct url', function () {
 
-			var url = 'http://api.openweathermap.org/data/2.5/weather?zip=95833,us'
+			var url = 'http://api.openweathermap.org/data/2.5/weather?zip=95814,us';
 			$httpBackend
 				.expect('GET', url)
 				.respond(200, "weather data");
 
-			mockingHttp.getWeatherData('95833');
+			weather.getData('95814');
 
 			$httpBackend.flush();
 		});

@@ -19,7 +19,7 @@ module.exports = function(config) {
 			'./node_modules/angular-mocks/angular-mocks.js',
 			'./node_modules/bardjs/bower_components/sinon/index.js', //required for bardjs
 			'./node_modules/bardjs/dist/bard.js',
-      //'*.js',
+      '*.js',
 			'./examples/*.js'
     ],
 
