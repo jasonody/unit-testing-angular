@@ -1,9 +1,9 @@
-describe('initialization', function () {
+describe('userProfile', function () {
 	
 	beforeEach(function () {
 		
 		bard.appModule('testingAngular');
-		//bard.inject('initialization'); //Notice that we are not injecting it here
+		//bard.inject('userProfile'); //Notice that we are not injecting it here
 	});
 	
 	describe('initialize', function () {
@@ -13,7 +13,7 @@ describe('initialization', function () {
 			bard.inject('browserLocalStorage');
 		});
 		
-		it('should load profile from local storage', function () {
+		it('should load active profile from local storage', function () {
 			
 			var localProfile = {
 				token: 'token',
