@@ -41,7 +41,9 @@ describe('PromisesController', function () {
 		
 		it('should update error message if something goes wrong', function () {
 			
-			controller.update('95814');
+			controller.zip = '95814';
+			
+			controller.update();
 			deferred.reject();
 			$rootScope.$digest();
 
