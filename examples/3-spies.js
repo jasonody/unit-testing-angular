@@ -25,7 +25,7 @@ function user () {
 
 		//do some stuff to determine user type...
 
-		return (new Date().getSeconds() % 2 == 0 ? "Staff" : "Student");
+		return (new Date().getSeconds() % 2 === 0 ? "Staff" : "Student");
 	}
 
 	return {

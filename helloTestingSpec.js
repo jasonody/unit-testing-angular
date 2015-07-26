@@ -1,4 +1,4 @@
-describe('isAngular1xDead?', function () {
+describe('isAngular1xDead', function () {
 	
 	it('should tell me that it is not!', function () {
 		
