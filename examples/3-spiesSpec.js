@@ -9,7 +9,7 @@ describe('SpiesController', function () {
 		
 		$controller = _$controller_;
 		
-		controller = _$controller_('SpiesController');
+		controller = $controller('SpiesController');
 	}));
 	
 	describe('isStaff', function () {
